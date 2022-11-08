@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class Main {
@@ -6,6 +8,8 @@ public class Main {
         reverse("Hola Mundo");
 
         // 1. Crea un array unidimensional de String y recórrelo, mostrando únicamente sus valores.
+
+        System.out.println("Punto 1");
         String[] unidimensionalArray = {"Manzada", "Pera", "Uva", "Lulo"};
 
         for (int positionArray = 0; positionArray < unidimensionalArray.length; positionArray++){
@@ -13,6 +17,7 @@ public class Main {
         }
 
         // 2. Crea un array bidimensional de enteros y recórrelo, mostrando la posición y el valor de cada elemento en ambas dimensiones.
+        System.out.println("Punto 2");
         int[][] bidimensionalArray = {{1,2,3},{4,5,6}};
 
         for (int positionA = 0; positionA < bidimensionalArray.length; positionA++){
@@ -22,7 +27,7 @@ public class Main {
         }
 
         // 3. Crea un "Vector" del tipo de dato que prefieras, y añádele 5 elementos. Elimina el 2do y el 3er elemento y muestra el resultado.
-
+        System.out.println("Punto 3");
         Vector<String> ejemploVector = new Vector<String>();
 
         ejemploVector.add("A");
@@ -36,8 +41,28 @@ public class Main {
 
         System.out.println(ejemploVector);
 
+        // 4. Indica cuál es el problema de utilizar un Vector con la capacidad por defecto si tuviésemos 1000 elementos para ser añadidos al mismo.
+        System.out.println("Punto 4");
+        String explicacion4 = "Al tener una capacidad por defecto si se añade un elemento por encima de la capacidad tendremos fallos en la ejecución.";
+        System.out.println(explicacion4);
 
+        // 5. Crea un ArrayList de tipo String, con 4 elementos. Cópialo en una LinkedList. Recorre ambos mostrando únicamente el valor de cada elemento.
 
+        System.out.println("Punto 5");
+        ArrayList<String> ejemploArrayList = new ArrayList<String>();
+        ejemploArrayList.add("Cleopatra");
+        ejemploArrayList.add("Alejandro Magno");
+        ejemploArrayList.add("Julio Cesar");
+        ejemploArrayList.add("Tutamkamon");
+
+        LinkedList<String> ejemploLinkedList = new LinkedList();
+
+        ejemploLinkedList.addAll(ejemploArrayList);
+
+        for (int elemento = 0; elemento <  ejemploArrayList.size(); elemento++){
+            System.out.println("ArrayList posición: " + elemento + " ArrayList Elemento: " + ejemploArrayList.get(elemento));
+            System.out.println("LinkedList posición: " + elemento + " LinkedList elemento: " + ejemploLinkedList.get(elemento) );
+        }
     }
 
 
