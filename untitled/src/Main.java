@@ -10,6 +10,14 @@ public class Main {
         for (int positionArray = 0; positionArray < unidimensionalArray.length; positionArray++){
             System.out.println(unidimensionalArray[positionArray]);
         }
+
+        int[][] bidimensionalArray = {{1,2,3},{4,5,6}};
+
+        for (int positionA = 0; positionA < bidimensionalArray.length; positionA++){
+            for(int positionB = 0; positionB < bidimensionalArray[positionA].length; positionB++){
+                System.out.println("Posicion: " + bidimensionalArray[positionA][positionB]);
+            }
+        }
     }
 
 
