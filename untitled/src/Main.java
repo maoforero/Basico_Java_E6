@@ -87,10 +87,23 @@ public class Main {
             System.out.println("Recorriendo Array posicion " + l + " Elemento: " + arrayNumeros.get(l));
         }
 
+        // 7. Crea una funcion dividePorCero. Debe generar una excepcion (throws) a su llamante del tipo ArithMethicException que sera
+        // Capturada por su llamante main. Si se dispara la excepcion, mostraremos el mensaje "Esto no puede hacerse". Sino "Demo Codigo.
 
+        dividePorCero(10);
+        dividePorCero(0);
 
+    }
 
-
+    public static Integer dividePorCero(Integer numero) throws ArithmeticException{
+        try{
+            numero = numero / 0;
+        }catch(ArithmeticException e){
+            System.out.println("Esto no puede hacerse.");
+        }
+        
+        System.out.println("Demo de codigo");
+        return 0;
     }
 
 
