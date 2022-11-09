@@ -63,6 +63,34 @@ public class Main {
             System.out.println("ArrayList posición: " + elemento + " ArrayList Elemento: " + ejemploArrayList.get(elemento));
             System.out.println("LinkedList posición: " + elemento + " LinkedList elemento: " + ejemploLinkedList.get(elemento) );
         }
+
+        // 6. Crea un ArrayList de tipo int y utilizando un bucle rellenalo con elementos 1 a 10. A continuacion con otro bucle
+        // recorrelo y elimina los numeros pares. Por ultimo, vuelve a recorrerlo y muestra el ArrayList final.
+
+        ArrayList<Integer> arrayNumeros = new ArrayList<Integer>();
+
+        for(int n = 1; n < 11; n ++){
+            arrayNumeros.add(n);
+        }
+
+        System.out.println("Agreando numeros: " + arrayNumeros);
+
+        for(int i = 0; i < arrayNumeros.size(); i++){
+            if( arrayNumeros.get(i) % 2 == 0){
+                arrayNumeros.remove(arrayNumeros.get(i));
+            }
+        }
+
+        System.out.println("Solo numeros impares: " + arrayNumeros);
+
+        for(int l = 0; l < arrayNumeros.size(); l++){
+            System.out.println("Recorriendo Array posicion " + l + " Elemento: " + arrayNumeros.get(l));
+        }
+
+
+
+
+
     }
 
 
