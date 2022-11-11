@@ -101,7 +101,7 @@ public class Main {
         }catch(ArithmeticException e){
             System.out.println("Esto no puede hacerse.");
         }
-        
+
         System.out.println("Demo de codigo");
         return 0;
     }
@@ -114,8 +114,12 @@ public class Main {
             System.out.println(texto.charAt(i));
 
         }
-
-
         return null;
     }
+
+
+    public static String dosParametros(String fileIn, String fileOut){
+
+    }
+
 }
