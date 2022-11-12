@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Vector;
@@ -119,7 +121,9 @@ public class Main {
 
 
     public static String dosParametros(String fileIn, String fileOut){
-
+        InputStream fileInIS = new InputStream();
+        }
+        return fileIn;
     }
 
 }
